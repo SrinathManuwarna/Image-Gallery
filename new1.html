@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Image Gallery</h1>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="Images/image1.jpg" alt="Image 1" class="gallery-img" onclick="openModal(0)">
+        <img src="Images/image2.jpg" alt="Image 2" class="gallery-img" onclick="openModal(1)">
+        <img src="Images/image3.jpg" alt="Image 3" class="gallery-img" onclick="openModal(2)">
+        <img src="Images/image4.jpg" alt="Image 4" class="gallery-img" onclick="openModal(3)">
+        <img src="Images/image5.jpg" alt="Image 5" class="gallery-img" onclick="openModal(4)">
+        <img src="Images/image6.jpg" alt="Image 6" class="gallery-img" onclick="openModal(5)">
+        <img src="Images/image7.jpg" alt="Image 7" class="gallery-img" onclick="openModal(6)">
+        <img src="Images/image8.jpg" alt="Image 8" class="gallery-img" onclick="openModal(7)">
+        <img src="Images/image9.jpg" alt="Image 9" class="gallery-img" onclick="openModal(8)">
+        <img src="Images/image10.jpg" alt="Image 10" class="gallery-img" onclick="openModal(9)">
+        <img src="Images/image11.jpg" alt="Image 11" class="gallery-img" onclick="openModal(10)">
+        <img src="Images/image12.jpg" alt="Image 12" class="gallery-img" onclick="openModal(11)">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="caption" id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
